@@ -4,6 +4,11 @@ public class Vehicle {
     private String licenceNumber;
     private VehicleSize size;
 
+    public Vehicle(String licenceNumber, VehicleSize size) {
+        this.licenceNumber = licenceNumber;
+        this.size = size;
+    }
+
     public String getLicenceNumber() {
         return licenceNumber;
     }
@@ -17,11 +22,6 @@ public class Vehicle {
     }
 
     public void setSize(VehicleSize size) {
-        this.size = size;
-    }
-
-    public Vehicle(String licenceNumber, VehicleSize size) {
-        this.licenceNumber = licenceNumber;
         this.size = size;
     }
 

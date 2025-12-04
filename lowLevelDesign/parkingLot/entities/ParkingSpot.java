@@ -4,6 +4,14 @@ import lowLevelDesign.parkingLot.vehicle.Vehicle;
 import lowLevelDesign.parkingLot.vehicle.VehicleSize;
 
 public class ParkingSpot {
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
     private String id;
     private Boolean isOccupied;
     private Vehicle vehicle;
@@ -16,7 +24,7 @@ public class ParkingSpot {
         this.size = size;
     }
 
-    private void parkVehicle(Vehicle vehicle) {
+    public void parkVehicle(Vehicle vehicle) {
         this.vehicle = vehicle;
         isOccupied = true;
     }

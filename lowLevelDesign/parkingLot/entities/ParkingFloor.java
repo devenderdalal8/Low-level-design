@@ -5,20 +5,21 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
+
 import lowLevelDesign.parkingLot.vehicle.Vehicle;
 import lowLevelDesign.parkingLot.vehicle.VehicleSize;
 
 public class ParkingFloor {
 
-    private int parkingFloor;
-    private Map<String, ParkingSpot> spots;
+    private final int parkingFloor;
+    private final Map<String, ParkingSpot> spots;
 
-    ParkingFloor(int parkingFloor) {
+    public ParkingFloor(int parkingFloor) {
         this.parkingFloor = parkingFloor;
         spots = new ConcurrentHashMap<>();
     }
 
-    void addSpot(String key, ParkingSpot spot) {
+    public void addSpot(String key, ParkingSpot spot) {
         spots.put(key, spot);
     }
 
@@ -30,7 +31,7 @@ public class ParkingFloor {
                 .findFirst();
     }
 
-    void displayAvailabilitySpots() {
+    public void displayAvailabilitySpots() {
         Map<Object, Long> availableBySize = spots.values().stream()
                 .filter(spot -> !spot.getIsOccupied())
                 .collect(Collectors.groupingBy(ParkingSpot::getSize, Collectors.counting()));
