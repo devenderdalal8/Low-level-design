@@ -1,0 +1,6 @@
+{
+    "editor.defaultFormatter": "GitHub.copilot-chat",
+    "[java]": {
+        "editor.defaultFormatter": "redhat.java"
+    }
+}
