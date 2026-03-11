@@ -1,32 +1,28 @@
 package Locker;
 
-import java.util.Random;
-
 public class Container {
     private String id;
     private Status status = Status.IS_AVAILABLE;
-    private Size size;
+    private final ContainerSize containerSize;
 
-    public Container(Size size) {
-        this.size = size;
+    public Container(ContainerSize containerSize) {
+        this.containerSize = containerSize;
     }
 
     public Status getStatus() {
         return status;
     }
 
-    public Size getSize() {
-        return size;
+    public ContainerSize getSize() {
+        return containerSize;
     }
 
     public void open() {
         System.out.println("Opening container");
-        status = Status.OCCUPIED;
     }
 
     public void close() {
         System.out.println("Closing container");
-        status = Status.IS_AVAILABLE;
     }
 
     public void markOccupied() {
@@ -36,7 +32,6 @@ public class Container {
     public void markFree() {
         status = Status.IS_AVAILABLE;
     }
-
 
 }
 

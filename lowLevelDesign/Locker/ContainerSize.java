@@ -1,5 +1,5 @@
 package Locker;
 
-public enum Size {
+public enum ContainerSize {
     SMALL, MEDIUM, LARGE
 }
