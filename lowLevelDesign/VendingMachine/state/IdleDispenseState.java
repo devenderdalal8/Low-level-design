@@ -1,7 +1,7 @@
-package lowLevelDesign.VendingMachine.state;
+package VendingMachine.state;
 
-import lowLevelDesign.VendingMachine.VendingMachine;
-import lowLevelDesign.VendingMachine.enums.Coin;
+import VendingMachine.VendingMachine;
+import VendingMachine.enums.Coin;
 
 public class IdleDispenseState extends VendingMachineState {
     public IdleDispenseState(VendingMachine machine) {

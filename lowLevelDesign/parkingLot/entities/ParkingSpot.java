@@ -1,7 +1,7 @@
-package lowLevelDesign.parkingLot.entities;
+package parkingLot.entities;
 
-import lowLevelDesign.parkingLot.vehicle.Vehicle;
-import lowLevelDesign.parkingLot.vehicle.VehicleSize;
+import parkingLot.vehicle.Vehicle;
+import parkingLot.vehicle.VehicleSize;
 
 public class ParkingSpot {
     private String id;

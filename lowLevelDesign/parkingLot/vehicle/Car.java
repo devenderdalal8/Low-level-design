@@ -1,4 +1,4 @@
-package lowLevelDesign.parkingLot.vehicle;
+package parkingLot.vehicle;
 
 public class Car extends Vehicle {
     public Car(String licenceNumber) {

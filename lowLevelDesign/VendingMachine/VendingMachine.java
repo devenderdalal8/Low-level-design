@@ -1,10 +1,10 @@
-package lowLevelDesign.VendingMachine;
+package VendingMachine;
 
-import lowLevelDesign.VendingMachine.entities.Inventory;
-import lowLevelDesign.VendingMachine.entities.Item;
-import lowLevelDesign.VendingMachine.enums.Coin;
-import lowLevelDesign.VendingMachine.state.IdleDispenseState;
-import lowLevelDesign.VendingMachine.state.VendingMachineState;
+import VendingMachine.entities.Inventory;
+import VendingMachine.entities.Item;
+import VendingMachine.enums.Coin;
+import VendingMachine.state.IdleDispenseState;
+import VendingMachine.state.VendingMachineState;
 
 public class VendingMachine {
 

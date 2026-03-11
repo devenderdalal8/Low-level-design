@@ -1,4 +1,4 @@
-package lowLevelDesign.parkingLot.entities;
+package parkingLot.entities;
 
 import java.util.Comparator;
 import java.util.Map;
@@ -6,13 +6,13 @@ import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
-import lowLevelDesign.parkingLot.vehicle.Vehicle;
-import lowLevelDesign.parkingLot.vehicle.VehicleSize;
+import parkingLot.vehicle.Vehicle;
+import parkingLot.vehicle.VehicleSize;
 
 public class ParkingFloor {
 
     private final int parkingFloor;
-    private final Map<String, ParkingSpot> spots;
+    private final Map<String, parkingLot.entities.ParkingSpot> spots;
 
     public ParkingFloor(int parkingFloor) {
         this.parkingFloor = parkingFloor;
@@ -34,7 +34,7 @@ public class ParkingFloor {
     public void displayAvailabilitySpots() {
         Map<Object, Long> availableBySize = spots.values().stream()
                 .filter(spot -> !spot.getIsOccupied())
-                .collect(Collectors.groupingBy(ParkingSpot::getSize, Collectors.counting()));
+                .collect(Collectors.groupingBy(parkingLot.entities.ParkingSpot::getSize, Collectors.counting()));
 
         for (VehicleSize size : VehicleSize.values()) {
             System.out.printf("  %s spots: %d\n", size, availableBySize.getOrDefault(size, 0L));

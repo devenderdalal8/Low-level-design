@@ -1,4 +1,4 @@
-package lowLevelDesign.VendingMachine.enums;
+package VendingMachine.enums;
 
 public enum Coin {
     PENNY(1),

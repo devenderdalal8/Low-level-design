@@ -1,13 +1,13 @@
-package lowLevelDesign.parkingLot;
+package parkingLot;
 
-import lowLevelDesign.parkingLot.entities.ParkingFloor;
-import lowLevelDesign.parkingLot.entities.ParkingSpot;
-import lowLevelDesign.parkingLot.entities.ParkingTicket;
-import lowLevelDesign.parkingLot.stratergies.fee.FeeStrategy;
-import lowLevelDesign.parkingLot.stratergies.fee.VehicleBasedFeeStrategy;
-import lowLevelDesign.parkingLot.stratergies.parking.BestParkingStratergy;
-import lowLevelDesign.parkingLot.stratergies.parking.ParkingStratergy;
-import lowLevelDesign.parkingLot.vehicle.Vehicle;
+import parkingLot.entities.ParkingFloor;
+import parkingLot.entities.ParkingSpot;
+import parkingLot.entities.ParkingTicket;
+import parkingLot.stratergies.fee.FeeStrategy;
+import parkingLot.stratergies.fee.VehicleBasedFeeStrategy;
+import parkingLot.stratergies.parking.BestParkingStratergy;
+import parkingLot.stratergies.parking.ParkingStratergy;
+import parkingLot.vehicle.Vehicle;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 

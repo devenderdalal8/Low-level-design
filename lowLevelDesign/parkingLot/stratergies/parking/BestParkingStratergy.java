@@ -1,11 +1,11 @@
-package lowLevelDesign.parkingLot.stratergies.parking;
+package parkingLot.stratergies.parking;
 
 import java.util.List;
 import java.util.Optional;
 
-import lowLevelDesign.parkingLot.entities.ParkingFloor;
-import lowLevelDesign.parkingLot.entities.ParkingSpot;
-import lowLevelDesign.parkingLot.vehicle.Vehicle;
+import parkingLot.entities.ParkingFloor;
+import parkingLot.entities.ParkingSpot;
+import parkingLot.vehicle.Vehicle;
 
 public class BestParkingStratergy implements ParkingStratergy {
 

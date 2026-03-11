@@ -1,6 +1,6 @@
-package lowLevelDesign.VendingMachine;
+package VendingMachine;
 
-import lowLevelDesign.VendingMachine.enums.Coin;
+import VendingMachine.enums.Coin;
 
 public class VendingMachineDemo {
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
-package lowLevelDesign.parkingLot.stratergies.fee;
+package parkingLot.stratergies.fee;
 
-import lowLevelDesign.parkingLot.entities.ParkingTicket;
+import parkingLot.entities.ParkingTicket;
 
 public class FlatRateStrategy implements FeeStrategy {
     private static final double RATE_PER_HOUR = 10.0;

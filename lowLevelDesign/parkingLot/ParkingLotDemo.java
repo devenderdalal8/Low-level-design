@@ -1,12 +1,12 @@
-package lowLevelDesign.parkingLot;
+package parkingLot;
 
-import lowLevelDesign.parkingLot.entities.ParkingFloor;
-import lowLevelDesign.parkingLot.entities.ParkingSpot;
-import lowLevelDesign.parkingLot.entities.ParkingTicket;
-import lowLevelDesign.parkingLot.stratergies.fee.VehicleBasedFeeStrategy;
-import lowLevelDesign.parkingLot.vehicle.Bike;
-import lowLevelDesign.parkingLot.vehicle.Vehicle;
-import lowLevelDesign.parkingLot.vehicle.VehicleSize;
+import parkingLot.entities.ParkingFloor;
+import parkingLot.entities.ParkingSpot;
+import parkingLot.entities.ParkingTicket;
+import parkingLot.stratergies.fee.VehicleBasedFeeStrategy;
+import parkingLot.vehicle.Bike;
+import parkingLot.vehicle.Vehicle;
+import parkingLot.vehicle.VehicleSize;
 
 import java.util.Optional;
 

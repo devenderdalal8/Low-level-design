@@ -1,4 +1,4 @@
-package lowLevelDesign.VendingMachine.entities;
+package VendingMachine.entities;
 
 public class Item {
     private final String name;

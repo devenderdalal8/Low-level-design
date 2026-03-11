@@ -1,6 +1,6 @@
-package lowLevelDesign.parkingLot.entities;
+package parkingLot.entities;
 
-import lowLevelDesign.parkingLot.vehicle.Vehicle;
+import parkingLot.vehicle.Vehicle;
 
 import java.util.Date;
 import java.util.UUID;

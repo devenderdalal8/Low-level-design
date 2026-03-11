@@ -1,4 +1,4 @@
-package lowLevelDesign.parkingLot.vehicle;
+package parkingLot.vehicle;
 
 public class Vehicle {
     private String licenceNumber;

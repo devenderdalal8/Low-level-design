@@ -1,6 +1,6 @@
-package lowLevelDesign.parkingLot.stratergies.fee;
+package parkingLot.stratergies.fee;
 
-import lowLevelDesign.parkingLot.entities.ParkingTicket;
+import parkingLot.entities.ParkingTicket;
 
 public class VehicleBasedFeeStrategy implements FeeStrategy {
     public static final double SMALL_VEHICLE_RATE = 5.0;
