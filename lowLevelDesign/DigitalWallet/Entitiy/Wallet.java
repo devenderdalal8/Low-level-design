@@ -4,19 +4,19 @@ public class Wallet {
     private String walletId;
     private double balance;
 
-    public Wallet(String walletId){
+    public Wallet(String walletId) {
         this.walletId = walletId;
         this.balance = 0;
     }
 
-    public void credit(double amount){
+    public void credit(double amount) {
         this.balance += amount;
     }
 
-    public void debit(double amount){
-        if(amount > balance){
+    public void debit(double amount) {
+        if (amount > balance) {
             throw new RuntimeException("Insufficient balance");
-        }else{
+        } else {
             this.balance -= amount;
         }
     }

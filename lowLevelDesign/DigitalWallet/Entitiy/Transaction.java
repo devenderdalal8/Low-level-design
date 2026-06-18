@@ -1,5 +1,6 @@
 package DigitalWallet.Entitiy;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.UUID;
 
@@ -9,7 +10,7 @@ public class Transaction {
     public String toWalletId;
     public double amount;
     public TransactionStatus status;
-    public Date createAt;
+    public LocalDateTime createAt;
 
     public Transaction(String fromWalletId, String toWalletId, double amount, TransactionStatus status) {
         this.id = UUID.randomUUID().toString();
@@ -17,10 +18,17 @@ public class Transaction {
         this.toWalletId = toWalletId;
         this.amount = amount;
         this.status = status;
-        this.createAt = new Date();
+        this.createAt = LocalDateTime.now();
     }
 
-    public void setStutus(TransactionStatus status){
+    public void setStutus(TransactionStatus status) {
         this.status = status;
     }
+
+    @Override
+    public String toString() {
+        return "Transaction [id=" + id + ", fromWalletId=" + fromWalletId + ", toWalletId=" + toWalletId + ", amount="
+                + amount + ", status=" + status + ", createAt=" + createAt + "]";
+    }
+
 }

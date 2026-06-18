@@ -1,6 +1,5 @@
 package DigitalWallet.ServiceImpl;
 
-import javax.management.RuntimeErrorException;
 
 import DigitalWallet.Entitiy.Transaction;
 import DigitalWallet.Entitiy.TransactionStatus;

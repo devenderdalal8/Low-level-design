@@ -1,5 +1,7 @@
 package DigitalWallet;
 
+import java.time.LocalDateTime;
+
 import DigitalWallet.Entitiy.Wallet;
 import DigitalWallet.PaymentStratergy.PaymentStratergy;
 import DigitalWallet.PaymentStratergy.WalletPayment;
@@ -10,7 +12,7 @@ import DigitalWallet.RepositoryImpl.WalletRepositoryImpl;
 import DigitalWallet.Service.WalletService;
 import DigitalWallet.ServiceImpl.WalletServiceImpl;
 
-public class MobikwikWallet {
+public class DigitalWallet {
     public static void main(String[] args) {
         WalletRepository walletRepository = new WalletRepositoryImpl();
         TransactionRepository transactionRepository = new TransactionRepositoryImpl();
@@ -22,12 +24,14 @@ public class MobikwikWallet {
 
         walletService.addMoney(1000, "W1", paymentStratergy);
         walletService.addMoney(1000, "W2", paymentStratergy);
-        walletService.transferMoney(300,"W1","W2");
-        
-         System.out.println(
-                walletService.getBalance("W1")); //700
+        walletService.transferMoney(300, "W1", "W2");
 
         System.out.println(
-                walletService.getBalance("W2")); //300
+                walletService.getBalance("W1")); // 700
+
+        System.out.println(
+                walletService.getBalance("W2")); // 300
+        System.out.println(transactionRepository.getTransactionHistory("W1",
+                LocalDateTime.of(2026, 06, 11, 0, 0), LocalDateTime.of(2026, 06, 18, 0, 0)));
     }
 }
